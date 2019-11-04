@@ -1,10 +1,8 @@
-(defn hello_word_n_times 
-  [n]
-  (loop [count 0]
-    (when (not= count n)
-      (println "Hello World")
-    (recur (inc count)))))
-  
-  
-  (def n (Integer/parseInt (read-line)))
-  (hello_word_n_times n)
+(defn hello_word_n_times [n]
+  (when-not (= n 0 )
+    (println "Hello World")
+    (recur (dec n))))
+
+
+(def n (Integer/parseInt (read-line)))
+(hello_word_n_times n)
