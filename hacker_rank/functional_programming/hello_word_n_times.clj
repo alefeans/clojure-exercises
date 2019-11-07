@@ -1,8 +1,8 @@
-(defn hello_word_n_times [n]
+(defn hello-word-n-times [n]
   (when-not (= n 0 )
     (println "Hello World")
     (recur (dec n))))
 
 
 (def n (Integer/parseInt (read-line)))
-(hello_word_n_times n)
+(hello-word-n-times n)
